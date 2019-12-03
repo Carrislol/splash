@@ -2,9 +2,9 @@ steps:
   # build the container image
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/splash-server-with-gcbuild/splash-server:${SHORT_SHA}', '.']
-images: 
+  images: 
 - 'gcr.io/[PRODUCT_ID]/[CONTAINER_IMAGE]'
-timeout: 2000s
+  timeout: 2000s
   # push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/splash-server-with-gcbuild/splash-server']
