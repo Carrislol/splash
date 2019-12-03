@@ -128,7 +128,7 @@ VOLUME [ \
     "/etc/splash/lua_modules" \
 ]
 
-EXPOSE 8080
+EXPOSE PORT
 
 ENTRYPOINT [ \
     "python3", \
