@@ -138,4 +138,3 @@ ENTRYPOINT [ \
     "--filters-path", "/etc/splash/filters", \
     "--lua-package-path", "/etc/splash/lua_modules/?.lua" \
 ]
-
