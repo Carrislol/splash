@@ -128,7 +128,6 @@ VOLUME [ \
     "/etc/splash/lua_modules" \
 ]
 
-EXPOSE 8080
 
 ENTRYPOINT [ \
     "python3", \
@@ -137,4 +136,5 @@ ENTRYPOINT [ \
     "--js-profiles-path", "/etc/splash/js-profiles", \
     "--filters-path", "/etc/splash/filters", \
     "--lua-package-path", "/etc/splash/lua_modules/?.lua" \
+    "--port, $PORT" \
 ]
