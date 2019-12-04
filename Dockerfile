@@ -124,7 +124,7 @@ USER splash:splash
 VOLUME [ \
     "/etc/splash/proxy-profiles", \
     "/etc/splash/js-profiles", \
-    "/etc/splash/filters", \
+#    "/etc/splash/filters", \
     "/etc/splash/lua_modules" \
 ]
 
